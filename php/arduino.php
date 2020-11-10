@@ -25,10 +25,10 @@ die("Mongo DB no inicio");
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <title>Document</title>
+
+
 </head>
 <body>
-hola
+<?php echo $id;?>
 </body>
 </html>
