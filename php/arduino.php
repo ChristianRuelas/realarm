@@ -30,6 +30,6 @@ die("Mongo DB no inicio");
     <title>Document</title>
 </head>
 <body>
-   <?php echo "hola" ?>
+hola
 </body>
 </html>
