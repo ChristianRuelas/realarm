@@ -1,0 +1,80 @@
+body{
+    /*background: linear-gradient(to left, #76b852, #8DC26F);*/
+    background-image: url('../img/casa.jpg');
+    background-size: cover;
+    font-family: "Roboto", sans-serif;  
+    overflow: auto;
+}
+body::-webkit-scrollbar{
+    background:transparent;
+    height: 5px;
+    opacity: .5;
+    
+}
+
+body::-webkit-scrollbar-thumb{
+    
+   background-image: url('../img/engranaje.png');
+   background-size: contain;    
+}
+.login-page {
+  width: 40%;
+ padding: auto;
+margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 10%;
+  text-align: center;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form input[type="text"]:focus,.form input[type="password"]:focus{
+    box-shadow: 2px 2px 5px #666;
+    background: #f2f2f2;
+
+}
+.form label{
+    font-weight: bold;
+    font-style: oblique;
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+    font-size: 2vw;
+    background-color: transparent;
+    margin-top: -10%;
+}
+input[type="button"] {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+ margin: 1%;
+
+  cursor: pointer;
+}
+input[type="button"]:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}

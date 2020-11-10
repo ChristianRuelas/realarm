@@ -1,0 +1,251 @@
+body{
+    background-image: url('../img/casa.jpg');
+    background-size: cover;
+}
+.bsup{
+    position: fixed;
+    width: 100%;border-bottom: 1px solid gray;
+    height: 20%;
+    top: 0;
+    left: 0;
+    /*background-image: url(../img/Fondobsup.jpg);*/
+    background-color: rgba(77, 74, 74, 0.479);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Logo{
+    width: 20%;
+    height: 100%;
+    display: inline;
+}
+.titulo1{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+   font-weight: bolder;
+   font-family: fantasy;
+   font-style: oblique;
+   font-size: 3vw;
+}
+.btndescargas{
+    position: absolute;
+    top: 15%;
+    left: 68.5%;
+    width: 7%;
+    height: 50%;
+    text-align: center;
+    text-decoration: none;
+  
+    font-weight: bold;
+    box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 10px;
+    border:0;
+    cursor: pointer;
+    outline: 0;
+    
+}
+.btndescargas:hover,.btnregistro:hover,.btnlogin:hover{
+    box-shadow: 14px 13px 20px 0px rgba(0,0,0,0.75);
+    background-color: #ffff;
+    color: black;
+    
+}
+.btndescargas:active,.btnregistro:active,.btnlogin:active{
+  
+    box-shadow: 14px 13px 7px -5px rgba(0,0,0,0.75);
+}
+.btnregistro{
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    width: 7%;
+    height: 50%;
+    text-decoration: none;
+   
+    font-weight: bold;
+    box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+   outline: 0;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 10px;
+    border:0;
+    cursor: pointer;
+}
+.btnlogin{
+    position: absolute;outline: 0;
+    width: 7%;
+    height: 50%;
+    top: 15%;
+    left: 90%;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bold;
+    box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+    color: #ffffff;
+    background-color:#1883ba;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.bder{
+    position: fixed;
+    top: 21%;
+    right: 0%;
+    width: 15%;
+    height: 80%;
+    /*background-image: url(../img/Fondobder.jpg);*/
+    background-color: rgba(255, 255, 255, 0.418);
+    border-left: 1px solid gray;
+    
+}
+.btncomprar{
+    position: relative;width: 70%;height: 10%;
+    top: 10%;outline: 0;left: 17%;box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+    border:none;
+    font-family: arial;
+    font-weight: 800;
+    font-size: 25px;text-align: center;
+    color: #ffff;
+    background-color: #1883ba;
+    border-radius: 20px;cursor: pointer;
+}
+.btncomprar:hover,.btnwhats:hover{
+    box-shadow: 14px 13px 20px 0px rgba(0,0,0,0.75);
+    background-color: #ffff;
+    color: black;
+}
+.btncomprar:active,.btnwhats:active{box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);}
+.btnwhats{
+    position: relative;cursor: pointer;
+    top: 20%;box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+    left: 17%;font-weight: bolder;font-size: 100%; background-image: url("../img/wats.png");
+    background-size: 40%; background-repeat: no-repeat; background-position:left;
+    background-color: green; border: 0; color: #ffff; border-radius: 30px; width: 70%; height: 10%; 
+    padding-left: 22%; outline: none;margin-top: 5%;
+}
+.contacto{position: relative;top: 35%;font-weight: bolder;
+    font-style: italic;text-align: center;font-size: 120%;
+}
+.corr{
+    position: relative;text-align: center;top: 26%;
+    font-size: 100%;
+}
+
+.dcontenido{
+    overflow: auto;
+    position: fixed;
+    width: 84.5%;
+   height: 78%;
+    background-color: rgba(255, 255, 255, 0.404);
+    top: 21%;
+    left: 0%;
+    text-align: center;
+    border: 0;
+
+}
+.tituloc{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 3vw;
+}
+.parrafop{
+  
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.5vw;
+    padding: 0 6% 0% 5%;
+    font-weight: bold;
+    font-style: italic;
+}
+.desc{
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    background-image: url("../img/fondocircuito.jpg");
+    background-size: cover;
+    box-shadow: 14px 13px 10px 0px rgba(0,0,0,0.75);
+    outline: 0;
+    top: 10%;
+    left: 20%;
+    padding: 5%;
+    border-radius: 2vw;
+text-align: center;
+ visibility:hidden;
+ z-index: 10;
+}
+.descimg1{
+    position: absolute;
+    margin: 0%;
+    top: 20%;
+    left: 12%;
+    width: 40%;
+    height: 40%;
+}
+.descimg2{
+    position: absolute;
+    margin: 0%;
+    top: 20%;
+    left: 52%;
+    width: 40%;
+    height: 40%;
+}
+.btn {
+    position: relative;
+    top: 65%;
+    left: 6%;
+    appearance: none;
+    background-color: transparent;
+    border:none;
+    border-radius: 0.6em;
+    cursor: pointer;
+  margin-right: 5%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .btn:hover, .btn:focus {
+    color: #ffff;
+    outline: 0;
+  }
+  
+.third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+  }
+.third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.first {
+    background-color: darkorange;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+.ard{
+    width: 20vw;
+}
+.dcontenido::-webkit-scrollbar{
+    background:rgba(0, 0, 255, 0);
+    height: 5px;
+    opacity: .5;
+}
+
+.dcontenido::-webkit-scrollbar-thumb{
+    height: 5px;
+   background-image: url('../img/engranaje.png');
+   background-size: contain;    
+}
