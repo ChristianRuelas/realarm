@@ -14,18 +14,22 @@ if ($client) {
     
     ]);
 
-    //$qry = array("serie" => $serie,"password" => $pass);
+  
   
 }else {
 die("Mongo DB no inicio");
 }
 
 
-
-
-
-
-//echo "<script> alert('se agrego el usuario')</script>";
-echo "ese";
-
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <?php echo "hola" ?>
+</body>
+</html>
