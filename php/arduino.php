@@ -26,6 +26,6 @@ die("Mongo DB no inicio");
 
 
 //echo "<script> alert('se agrego el usuario')</script>";
-//echo($id."  ese");
+echo "ese";
 
 ?>
