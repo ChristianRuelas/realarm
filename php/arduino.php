@@ -20,15 +20,5 @@ if ($client) {
 die("Mongo DB no inicio");
 }
 
-
+echo $id;
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
-
-</head>
-<body>
-<?php echo $id;?>
-</body>
-</html>
