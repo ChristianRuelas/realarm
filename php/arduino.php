@@ -1,7 +1,7 @@
 <?php
 
-$id=$_GET['id'];
-echo "<script> alert('se agrego el usuario')</script>";
+$id=$_REQUEST['id'];
+//echo "<script> alert('se agrego el usuario')</script>";
 echo($id);
 
 ?>
