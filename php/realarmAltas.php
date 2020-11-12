@@ -16,7 +16,7 @@ if ($client) {
     $insertOneResult = $db->insertOne([
     'nombre' => $nusuario,
     'apellido' => $ausuario,
-    'dispositivo'=>(object)array(
+    'dispositivo'=>array(
         'serie'=>$serie,
             'clave'=>$clave
     )
