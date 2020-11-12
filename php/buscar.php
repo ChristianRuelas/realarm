@@ -10,7 +10,7 @@ if ($client) {
     
     ]);
     foreach ( $insertOneResult as $document) {
-        echo $document['_id'], "\n";}
+        echo $document['dispositivo.serie'], "\n";}
 
  // echo $insertOneResult;
   
