@@ -6,7 +6,7 @@ if ($client) {
     $db = $client->Realarm->usuarios;
 
     $insertOneResult = $db->find([
-    'dispositivo' => ['serie'=>$id],
+    'dispositivo' => ['serie'=>'123123'],
     
     ]);
     foreach ( $insertOneResult as $document) {
