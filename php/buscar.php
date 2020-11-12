@@ -9,8 +9,10 @@ if ($client) {
     'clave' => "3312",
     
     ]);
+    foreach ( $insertOneResult as $document) {
+        echo $document['_id'], "\n";}
 
-  echo $insertOneResult;
+ // echo $insertOneResult;
   
 }else {
 die("Mongo DB no inicio");
