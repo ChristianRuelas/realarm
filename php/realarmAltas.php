@@ -16,8 +16,13 @@ if ($client) {
     $insertOneResult = $db->insertOne([
     'nombre' => $nusuario,
     'apellido' => $ausuario,
-    'clave' => $clave,
-    'serie' => $serie,
+    'dispositivo'[
+        {
+            'serie'=>$serie,
+            'clave'=>$clave
+        }
+
+    ],
     'pass' => $pass,
     
     ]);
