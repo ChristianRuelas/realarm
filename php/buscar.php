@@ -6,11 +6,11 @@ if ($client) {
     $db = $client->Realarm->usuarios;
 
     $insertOneResult = $db->find([
-    'clave' => "3312",
+    'dispositivo' => ['serie'=>$id],
     
     ]);
     foreach ( $insertOneResult as $document) {
-        echo $document['dispositivo.serie'], "\n";}
+        echo $document['_id'], "\n";}
 
  // echo $insertOneResult;
   
