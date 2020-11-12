@@ -1,20 +1,22 @@
 <?php
 require_once('../vendor/autoload.php');
 
-$serie= $_POST["txtSerie"];
-$pass=$_POST["txtPass"];
+$serie= $_GET["txtSerie"];
+$pass=$_GET["txtPass"];
 
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 
 if ($client) {
     $db = $client->Realarm->usuarios;
-    $userDatabaseFind = $db->find(array('serie' => $serie,'pass'=> $pass));
+    $userDatabaseFind=$db->find([
+        'dispositivo.serie'=>$serie,
+    ]);
     foreach($userDatabaseFind as $userFind) {
-        $storedUsername = $userFind['serie'];
-        $storedPassword = $userFind['pass'];
+        $storedUsername = $userFind['pass'];
+        
     }
-    if($serie == $storedUsername && $pass == $storedPassword){ 
-        $_SESSION['authentication'] = 1;
+    if( $pass == $storedUsername){ 
+       
         ?>
         
         <script type="text/javascript">
@@ -32,22 +34,9 @@ if ($client) {
 
 
 
-   /* $qry = array("serie" => $serie,"password" => $pass);
-    $result = $db->find(['serie'=>$serie,'pass'=>$pass]);
-    if($result){
-    echo "<script> alert('si existe la cuenta')</script>";
-    sleep(10);
-    //header("Location: ../Realarm.php");
-    echo($result);
-    }else{
-
- } */
+  
 }else {
 die("Mongo DB no inicio");
 }
 
 ?>
-<script>
-alert(<?php $result['serie'] ?>);
-window.location="admin.php";
-</script>
