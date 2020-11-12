@@ -26,10 +26,13 @@ if ($client) {
         echo($storedUsername.$storedPassword);
         
     }else{
+        ?>
         
-        echo("no existe el usuario");
-        sleep(10);
-        header('Location: ../login.php');
+        <script type="text/javascript">
+   
+        alert("usuario no existe");
+        </script> <?php
+       
     }
 
 
