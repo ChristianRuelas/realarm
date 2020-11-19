@@ -17,7 +17,7 @@ $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christi
 if ($client) {
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->updateOne(
-        ['dispositivo.clave' => $secret],
+        ['nombre' => $user],
         ['$set' => ['pass' => $npass]]
     );
     $resultado=$userDatabaseFind->getModifiedCount();
