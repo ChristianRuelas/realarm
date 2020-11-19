@@ -1,8 +1,8 @@
 <?php
 require_once('../vendor/autoload.php');
 
-$serie= $_GET["txtSerie"];
-$pass=$_GET["txtPass"];
+$serie= $_POST["txtSerie"];
+$pass=$_POST["txtPass"];
 
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 
