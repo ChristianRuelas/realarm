@@ -86,5 +86,5 @@ function cancelar_cambio(){
     }
 }
 function cambiarp(){
-    document.form1.submit();
+    document.formita.submit();
 }
