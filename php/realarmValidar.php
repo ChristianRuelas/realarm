@@ -14,6 +14,7 @@ if ($client) {
     ]);
     foreach($userDatabaseFind as $userFind) {
         $storedUsername = $userFind['pass'];
+        $username=$userFind['nombre'];
         
     }
     if( $pass == $storedUsername){ 
@@ -24,7 +25,7 @@ if ($client) {
    
         alert("usuario si existe");
         </script> <?php
-        $_SESSION['Ruser']=$serie;
+        $_SESSION['Ruser']=$username;
        header('location:../Realarm.php');
         
     }else{

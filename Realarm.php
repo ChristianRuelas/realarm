@@ -1,6 +1,11 @@
 <?php
 session_start();
-$user=$_SESSION['Ruser'];
+if (!isset($_SESSION['Ruser'])) {
+    header('location: login.php');
+  } else {
+    $user=$_SESSION['Ruser'];
+  }
+
 ?>
 
 
@@ -21,7 +26,7 @@ $user=$_SESSION['Ruser'];
         <audio id="alarma" src="audio/Alarma Efecto de Sonido.mp3" preload="auto" loop></audio>
         <img class="logo" src="img/Logo.png" alt="Logo">
         <p class="Nuser"><?php echo $user;?></p>
-        <input class="Csesion" type="button" value="Cerrar secion" onclick="Csesion()">
+        <input class="Csesion" type="button" value="Cerrar secion" onclick="<?php session_destroy();?>,Csesion()">
         <input class="Cpass" type="button" value="Cambiar contraseña" onclick="window.location='Cpass.php'">
     </div>
    <div class="encendido">
