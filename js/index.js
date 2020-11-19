@@ -85,4 +85,6 @@ function cancelar_cambio(){
         window.location="Realarm.php";
     }
 }
-
+function cambiarp(){
+    document.form1.submit();
+}

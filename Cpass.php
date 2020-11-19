@@ -24,7 +24,7 @@ if (!isset($_SESSION['Ruser'])) {
             <input name="txtpa" type="password" placeholder="Contraseña actual" required/>
             <input name="txtpn" type="password" placeholder="Nueva contraseña" require/>
             <input type="password" name="txtcs" placeholder="Clave secreta del dispositivo">
-            <input value="Aplicar cambio"  type="submit" />
+            <input value="Aplicar cambio"  type="button" onclick="cambiarp()">
             <input value="Cancelar cambio" type="button" onclick="cancelar_cambio()"/>
             
           </form>
