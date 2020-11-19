@@ -14,6 +14,11 @@ if (!isset($_SESSION['Ruser'])) {
     <link rel="stylesheet" href="css/reg.css">
     <script src="js/index.js"></script>
     <title>CambiarPassword</title>
+    <script>
+      function cambiarp(){
+    document.formita.submit();
+}
+    </script>
 </head>
 <body>
     <div class="login-page">
