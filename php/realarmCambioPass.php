@@ -8,7 +8,12 @@ if (!isset($_SESSION['Ruser'])) {
 $pass=$_POST["txtpa"];
 $npass=$_POST["txtpn"];
 $secret=$_POST["txtcs"];
+?>
+        
+<script type="text/javascript">
 
+alert(<?php echo $npass;?>);
+</script> <?php
 
 header('location:../Realarm.php');
 require_once('../vendor/autoload.php');
