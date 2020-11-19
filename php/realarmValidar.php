@@ -23,7 +23,7 @@ if ($client) {
    
         alert("usuario si existe");
         </script> <?php
-        echo($storedUsername.$storedPassword);
+       header('location:../Realarm.php');
         
     }else{
         ?>
