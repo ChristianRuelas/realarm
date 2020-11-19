@@ -22,9 +22,9 @@ if (!isset($_SESSION['Ruser'])) {
           <form name="form1" class="login-form" action="php/realarmCambioPass.php" method="POST">
              <label for="txtpa">Cambiar contraseña</label>
             <input name="txtpa" type="password" placeholder="Contraseña actual" required/>
-            <input name="txtpn" type="password" placeholder="Nueva contraseña">
+            <input name="txtpn" type="password" placeholder="Nueva contraseña" require/>
             <input type="password" name="txtcs" placeholder="Clave secreta del dispositivo">
-            <input value="Aplicar cambio"  type="button" onclick="document.location='php/realarmCambioPass.php'"/>
+            <input value="Aplicar cambio"  type="submit" />
             <input value="Cancelar cambio" type="button" onclick="cancelar_cambio()"/>
             
           </form>
