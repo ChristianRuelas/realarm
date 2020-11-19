@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('../vendor/autoload.php');
 
 $serie= $_POST["txtSerie"];
@@ -23,6 +24,7 @@ if ($client) {
    
         alert("usuario si existe");
         </script> <?php
+        $_SESSION['Ruser']=$serie;
        header('location:../Realarm.php');
         
     }else{
@@ -32,7 +34,8 @@ if ($client) {
    
         alert("usuario no existe");
         </script> <?php
-       
+
+       header('location:../login.php');
     }
 
 
