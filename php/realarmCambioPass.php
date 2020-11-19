@@ -5,9 +5,9 @@ if (!isset($_SESSION['Ruser'])) {
   } else {
     $user=$_SESSION['Ruser'];
   }
-$pass=$_POST['txtpa'];
-$npass=$_POST['txtpn'];
-$secret=$_POST['txtcs'];
+$pass=$_POST["txtpa"];
+$npass=$_POST["txtpn"];
+$secret=$_POST["txtcs"];
 
 
 header('location:../Realarm.php');
