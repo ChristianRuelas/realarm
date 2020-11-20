@@ -14,9 +14,9 @@ if ($client) {
 
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->findOne([
-        'dispositivo.serie'=>$serie,
+        'dispositivo.btnpress'=>30,
     ]);
-echo($userDatabaseFind[(int)'dispositivo.btnpress']);
+echo($userDatabaseFind['dispositivo.btnpress']);
     
     /*foreach($userDatabaseFind as $userFind) {
         $dato = $userFind[''];
