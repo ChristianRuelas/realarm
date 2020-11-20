@@ -19,17 +19,13 @@ if (!isset($_SESSION['Ruser'])) {
     <title>Realarm</title>
     <script>
       function alarma(){
-          var alarma=$.ajax({
+          var alarmac=$.ajax({
               url: 'encenderapagar.php',
               dataType:'text',
               async:false
           }).respponseText;
-          if(document.getElementById('ddd').innerHTML=='cambio'){
-            document.getElementById('ddd').innerHTML='alarma';
-          }else{
-            document.getElementById('ddd').innerHTML='cambio'
-          }
-          setTimeout(alarma(),1000);
+         alert(alarmac);
+          setInterval(alarma,5000);
 
       }
 
