@@ -23,6 +23,7 @@ if ($client) {
    
 echo($dato);
 echo($_SESSION['Ruser']);
+echo($valor);
 
   
 }else {
