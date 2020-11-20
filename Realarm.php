@@ -29,7 +29,7 @@ if (!isset($_SESSION['Ruser'])) {
           }else{
             document.getElementById('ddd').innerHTML='cambio'
           }
-          setInterval(alarma,1000);
+          setTimeout(alarma(),1000);
 
       }
 
