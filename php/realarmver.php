@@ -17,6 +17,7 @@ if ($client) {
         'dispositivo.btnpress'=>30,
     ]);
     var_dump($userDatabaseFind);
+    echo($userDatabaseFind[dispositivo.serie]);
 
     
     /*foreach($userDatabaseFind as $userFind) {
