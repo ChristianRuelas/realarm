@@ -13,12 +13,13 @@ $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christi
 if ($client) {
 
     $db = $client->Realarm->usuarios;
-    $userDatabaseFind=$db->find([
+    $userDatabaseFind=$db->findOne([
         'dispositivo.serie'=>$serie,
     ]);
+    echo($userDatabaseFind['dispositivo.clave']);
     
     foreach($userDatabaseFind as $userFind) {
-        $dato = $userFind['dispositivo[btnpress]'];
+        $dato = $userFind[''];
         var_dump($dato);
         
     }
