@@ -19,12 +19,11 @@ if ($client) {
     'dispositivo'=>[
         'serie'=>$serie,
             'clave'=>$clave,
-            'btnpress'=>30,
+    ],
+    'btnpress'=>30,
             'sensoract'=>20,
             'tiempoact'=>10,
             'estado'=>'activado'
-    
-    ],
     'pass' => $pass,
     
     ]);
