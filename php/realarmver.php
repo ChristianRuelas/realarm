@@ -16,10 +16,10 @@ if ($client) {
     $userDatabaseFind=$db->find([
         'dispositivo.serie'=>$serie,
     ]);
-    var_dump($userDatabaseFind);
+    
     foreach($userDatabaseFind as $userFind) {
         $dato = $userFind['dispositivo.clave'];
-        
+        var_dump($userFind);
         
     }
    
