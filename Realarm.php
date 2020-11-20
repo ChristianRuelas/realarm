@@ -40,10 +40,10 @@ if (!isset($_SESSION['Ruser'])) {
    <div class="vereg" id="registro">
        <form name="forma" action="php/realarmver.php" method="POST" target="frameR">
            <input class="ocul" type="text" name="txto" id="txtoculto">
-        <input class="btn btn-two" type="button" value="Tiempo de actividad" onclick="direccionar('dispositivo.tiempoact')">
-       <input class="btn btn-two" type="button" value="Estado" onclick="direccionar('dispositivo.estado')">
-       <input class="btn btn-two" type="button" value="Sensor activado" onclick="direccionar('dispositivo.sensoract')">
-       <input class="btn btn-two" type="button" value="Boton activado" onclick="direccionar('dispositivo.btnpress')">
+        <input class="btn btn-two" type="button" value="Tiempo de actividad" onclick="direccionar('tiempoact')">
+       <input class="btn btn-two" type="button" value="Estado" onclick="direccionar('estado')">
+       <input class="btn btn-two" type="button" value="Sensor activado" onclick="direccionar('sensoract')">
+       <input class="btn btn-two" type="button" value="Boton activado" onclick="direccionar('btnpress')">
     </form>
    </div>
    <iframe id="ffr" name="frameR" class="frameR" src="php/realarmver.php" frameborder="0"></iframe>
