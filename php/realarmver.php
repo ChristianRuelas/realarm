@@ -21,7 +21,8 @@ if ($client) {
         
     }
    
-
+echo($dato);
+echo($_SESSION['Ruser']);
 
   
 }else {
