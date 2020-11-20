@@ -16,6 +16,7 @@ if ($client) {
     $userDatabaseFind=$db->find([
         'dispositivo.serie'=>$serie,
     ]);
+    echo($userDatabaseFind['dispositivo.clave']);
     foreach($userDatabaseFind as $userFind) {
         $dato = $userFind['dispositivo.clave'];
         
