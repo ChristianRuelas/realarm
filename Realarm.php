@@ -39,7 +39,7 @@ if (!isset($_SESSION['Ruser'])) {
     <div class="user" id="userr">
         <audio id="alarma" src="audio/Alarma Efecto de Sonido.mp3" preload="auto" loop></audio>
         <img class="logo" src="img/Logo.png" alt="Logo">
-        <p class="Nuser" id="ddd">cambio</p>
+        <p class="Nuser" id="ddd" ></p>
         <input class="Csesion" type="button" value="Cerrar secion" onclick="Csesion()">
         <input class="Cpass" type="button" value="Cambiar contraseña" onclick="window.location='Cpass.php'">
     </div>
