@@ -16,8 +16,8 @@ if ($client) {
         'dispositivo.serie'=>$serie,
     ]);
     foreach($userDatabaseFind as $userFind) {
-        $dato = $userFind[$valor];
-        echo($dato);
+        $dato = $userFind['dispositivo.btnpress'];
+        
         
     }
    
