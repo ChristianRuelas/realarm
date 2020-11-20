@@ -18,14 +18,13 @@ if ($client) {
     ]);
     var_dump($userDatabaseFind);
     
-    foreach($userDatabaseFind as $userFind) {
+    /*foreach($userDatabaseFind as $userFind) {
         $dato = $userFind[''];
-        var_dump($dato);
         
     }
 
 echo($dato);
-echo($serie);
+echo($serie);*/
 
 
   
