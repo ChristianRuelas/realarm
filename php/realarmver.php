@@ -16,7 +16,8 @@ if ($client) {
     $userDatabaseFind=$db->findOne([
         'dispositivo.btnpress'=>30,
     ]);
-echo($userDatabaseFind['dispositivo'].$userDatabaseFind['clave']);
+    var_dump($userDatabaseFind);
+
     
     /*foreach($userDatabaseFind as $userFind) {
         $dato = $userFind[''];
