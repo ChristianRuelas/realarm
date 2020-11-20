@@ -23,7 +23,7 @@ if (!isset($_SESSION['Ruser'])) {
               url: 'encenderapagar.php',
               dataType:'text',
               async:false
-          }).respponseText;
+          }).responseText;
          alert(alarmac);
          
 
