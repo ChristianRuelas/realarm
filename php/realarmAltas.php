@@ -23,7 +23,7 @@ if ($client) {
     'btnpress'=>30,
             'sensoract'=>20,
             'tiempoact'=>10,
-            'estado'=>'activado'
+            'estado'=>'activado',
     'pass' => $pass,
     
     ]);
