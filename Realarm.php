@@ -25,9 +25,10 @@ if (!isset($_SESSION['Ruser'])) {
               async:false
           }).respponseText;
          alert(alarmac);
-          setInterval(alarma,5000);
+         
 
       }
+      setInterval(alarma,5000);
 
     </script>
 </head>
