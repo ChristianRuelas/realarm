@@ -15,9 +15,23 @@ if (!isset($_SESSION['Ruser'])) {
     <meta charset="UTF-8">
    <link rel="stylesheet" href="css/Realarm.css">
    <script src="js/Realarm.js"></script>
+   <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
-      
+      function alarma(){
+          var alarma=$.ajax({
+              url: 'encenderapagar.php',
+              dataType:'text',
+              async:false
+          }).respponseText;
+          if(document.getElementById('ddd').innerHTML=='cambio'){
+            document.getElementById('ddd').innerHTML='alarma';
+          }else{
+            document.getElementById('ddd').innerHTML='cambio'
+          }
+          setInterval(alarma,1000);
+
+      }
 
     </script>
 </head>
@@ -25,7 +39,7 @@ if (!isset($_SESSION['Ruser'])) {
     <div class="user" id="userr">
         <audio id="alarma" src="audio/Alarma Efecto de Sonido.mp3" preload="auto" loop></audio>
         <img class="logo" src="img/Logo.png" alt="Logo">
-        <p class="Nuser"><?php echo $user;?></p>
+        <p class="Nuser" id="ddd">cambio</p>
         <input class="Csesion" type="button" value="Cerrar secion" onclick="Csesion()">
         <input class="Cpass" type="button" value="Cambiar contraseña" onclick="window.location='Cpass.php'">
     </div>

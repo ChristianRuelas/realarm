@@ -1,4 +1,5 @@
 <?php
-header('location:../Realarm.php');
+//header('location:../Realarm.php');
+echo('hola');
 
 ?>
