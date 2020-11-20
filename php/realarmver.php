@@ -18,11 +18,11 @@ if ($client) {
     ]);
     
     foreach($userDatabaseFind as $userFind) {
-        $dato = $userFind['dispositivo.btnpress'];
+        $dato = $userFind['pass'];
         var_dump($dato);
         
     }
-   echo($userDatabaseFind['dispositivo.btnpress']);
+
 echo($dato);
 echo($serie);
 
