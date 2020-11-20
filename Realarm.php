@@ -20,7 +20,7 @@ if (!isset($_SESSION['Ruser'])) {
     <script>
       function alarma(){
           var alarmac=$.ajax({
-              url: 'encenderapagar.php',
+              url: 'php/encenderapagar.php',
               dataType:'text',
               async:false
           }).responseText;
