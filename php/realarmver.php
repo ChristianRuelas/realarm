@@ -1,12 +1,13 @@
 <?php
 session_start();
 $valor=$_POST['txto'];
+$serie=$_SESSION['Rserie'];
 if (!isset($_SESSION['Ruser'])) {
     header('location: login.php');
   } else {
     $user=$_SESSION['Ruser'];
   }
-  $serie=$_SESSION['Rserie'];
+  
 require_once('../vendor/autoload.php');
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 if ($client) {
@@ -22,6 +23,7 @@ if ($client) {
     }
    
 echo($dato);
+echo($serie);
 
 
   
