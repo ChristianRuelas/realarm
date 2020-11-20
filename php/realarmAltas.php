@@ -18,7 +18,11 @@ if ($client) {
     'apellido' => $ausuario,
     'dispositivo'=>[
         'serie'=>$serie,
-            'clave'=>$clave
+            'clave'=>$clave,
+            'btnpress'=>30,
+            'sensoract'=>20,
+            'tiempoact'=>10,
+            'estado'=>'activado'
     
     ],
     'pass' => $pass,

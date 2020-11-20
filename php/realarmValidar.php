@@ -26,6 +26,7 @@ if ($client) {
         alert("usuario si existe");
         </script> <?php
         $_SESSION['Ruser']=$username;
+        $_SESSION['Rserie']=$serie;
        header('location:../Realarm.php');
         
     }else{
