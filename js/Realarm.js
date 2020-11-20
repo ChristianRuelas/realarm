@@ -20,6 +20,6 @@ function Csesion(){
    var x=confirm("Seguro que decea cerrar la sesion");
    if(x){
    
-      document.location="index.php";
+      document.location="php/cerrarsesion.php";
    }
 }
