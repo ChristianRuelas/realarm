@@ -22,7 +22,7 @@ if ($client) {
         var_dump($userFind);
         
     }
-   
+   echo($userDatabaseFind['dispositivo.btnpress']);
 echo($dato);
 echo($serie);
 
