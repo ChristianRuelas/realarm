@@ -16,7 +16,7 @@ if ($client) {
     $userDatabaseFind=$db->findOne([
         'dispositivo.serie'=>$serie,
     ]);
-echo($userDatabaseFind['dispositivo.estado']);
+echo($userDatabaseFind[(int)'dispositivo.btnpress']);
     
     /*foreach($userDatabaseFind as $userFind) {
         $dato = $userFind[''];
