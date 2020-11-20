@@ -19,7 +19,7 @@ if ($client) {
     
     foreach($userDatabaseFind as $userFind) {
         $dato = $userFind['dispositivo:btnpress'];
-        var_dump($userFind);
+        var_dump($dato);
         
     }
    echo($userDatabaseFind['dispositivo.btnpress']);
