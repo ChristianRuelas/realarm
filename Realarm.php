@@ -18,7 +18,7 @@ if (!isset($_SESSION['Ruser'])) {
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
-      function alarma(){
+      /*function alarma(){
           var alarmac=$.ajax({
               url: 'php/encenderapagar.php',
               dataType:'text',
@@ -28,7 +28,7 @@ if (!isset($_SESSION['Ruser'])) {
          
 
       }
-      setInterval(alarma,5000);
+      setInterval(alarma,5000);*/
 
     </script>
 </head>
