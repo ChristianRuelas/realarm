@@ -16,7 +16,13 @@ if (!isset($_SESSION['Ruser'])) {
     <title>CambiarPassword</title>
     <script>
       function cambiarp(){
-    document.formita.submit();
+        if(document.txtpn.value==document.txtcs.value){
+          document.formita.submit();
+        }
+        else{
+          alert("no coincide la contraseña nueva");
+        }
+    
 }
     </script>
 </head>
@@ -27,8 +33,8 @@ if (!isset($_SESSION['Ruser'])) {
           <form name="formita" class="login-form" action="php/realarmCambioPass.php" method="POST">
              <label for="txtpa">Cambiar contraseña</label>
             <input name="txtpa" type="password" placeholder="Contraseña actual" required/>
-            <input name="txtpn" type="password" placeholder="Nueva contraseña" require/>
-            <input type="password" name="txtcs" placeholder="Clave secreta del dispositivo">
+            <input name="txtpn" type="password" placeholder="Nueva contraseña" required/>
+            <input type="password" name="txtcs" placeholder="Repita la nueva contraseña" required/>
             <input value="Aplicar cambio"  type="button" onclick="cambiarp()">
             <input value="Cancelar cambio" type="button" onclick="cancelar_cambio()"/>
             
