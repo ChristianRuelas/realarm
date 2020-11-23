@@ -17,10 +17,11 @@ if ($client) {
     ]);
     foreach($userDatabaseFind as $userFind) {
         $state = $userFind['estado'];
+        $act=$userFind['activar'];
         
         
     }
-    if($state=="up"){
+    if($state=="up"&&$act=="1"){
         echo '1'; 
         
     }else if($state=="down"){

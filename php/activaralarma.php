@@ -15,7 +15,15 @@ if ($client) {
     );
     $resultado=$userDatabaseFind->getModifiedCount();
     if($resultado==1){
-      
+        $userDatabaseFind2=$db->find([
+            'serie'=>$serie,
+        ]);
+        $act=$userDatabaseFind2['vecesact'];
+        $act=$act+1;
+        $userDatabaseFind=$db->updateOne(
+            ['serie' => $serie],
+            ['$set' => ['vecesact' => $act]]
+        );
       echo 'Alarma encendida';
     }
     else{
