@@ -18,7 +18,9 @@ if ($client) {
         $userDatabaseFind2=$db->find([
             'serie'=>$serie,
         ]);
-        $act=$userDatabaseFind2['vecesact'];
+        foreach($userDatabaseFind as $userFind) {
+            $act = $userFind['vecesact'];    
+        }
         $act=$act+1;
         $userDatabaseFind=$db->updateOne(
             ['serie' => $serie],
