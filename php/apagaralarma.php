@@ -12,7 +12,7 @@ if ($client) {
 
     $userDatabaseFind=$db->updateOne(
         ['serie' => $serie],
-        ['$set' => ['estado' => 'apagado']]
+        ['$set' => ['estado' => 'down']]
     );
     $userDatabaseFind2=$db->updateOne(
         ['serie' => $serie],
