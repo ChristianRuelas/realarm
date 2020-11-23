@@ -18,18 +18,41 @@ if (!isset($_SESSION['Ruser'])) {
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
-      /*function alarma(){
+      function alarma(){
           var alarmac=$.ajax({
               url: 'php/encenderapagar.php',
               dataType:'text',
               async:false
           }).responseText;
-         alert(alarmac);
-         
+          if(alarmac=="1"){
+              encender();
+          }else if(alarmac=="2"){
+              apagar();
+          }else{
+            alert("error de conexion");
+          }
+       }
+      setInterval(alarma,10000);
+      function apagaralar(){
+          var resp=$.ajax({
+              url:'php/apagaralarma.php',
+              dataType:'text',
+              async:false
+          }).responseText;
+          alert(resp);
+          document.getElementById("estado").innerHTML="apagado";
 
       }
-      setInterval(alarma,5000);*/
+      function encenderalar(){
+          var resp=$.ajax({
+              url:'php/activaralarma.php',
+              dataType:'text',
+              async:false
+          }).responseText;
+          alert(resp);
+          document.getElementById("estado").innerHTML="encendido";
 
+      }
     </script>
 </head>
 <body>
@@ -42,11 +65,11 @@ if (!isset($_SESSION['Ruser'])) {
     </div>
    <div class="encendido">
        <p class="pencendido">Control de Alarma</p>
-      <img class="btnactivar"  src="img/encender.png" alt="encendido" onclick="encender()">
-      <img class="btnactivar" src="img/apagar.png" alt="apagar" onclick="apagar()">
+      <img class="btnactivar"  src="img/encender.png" alt="encendido" onclick="encenderalar()">
+      <img class="btnactivar" src="img/apagar.png" alt="apagar" onclick="apagaralar()">
    </div>
    <div class="estado" id="edo">
-       <p id="estado" class="verestado"><script>apagar();</script></p>
+       <p id="estado" class="verestado"></p>
    </div>
    <div class="vereg" id="registro">
        <form name="forma" action="php/realarmver.php" method="POST" target="frameR">

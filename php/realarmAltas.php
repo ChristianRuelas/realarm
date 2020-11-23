@@ -22,7 +22,8 @@ if ($client) {
     'btnpress'=>30,
     'sensoract'=>20,
     'tiempoact'=>10,
-    'estado'=>'activado',
+    'estado'=>'down',
+    'activar'=>'0',
     'pass' => $encrypted,
     
     ]);
