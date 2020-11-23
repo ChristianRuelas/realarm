@@ -10,7 +10,7 @@ $npass=$_POST["txtpn"];
 $secret=$_POST["txtcs"];
 
 
-header('location:../Realarm.php');
+//header('location:../Realarm.php');
 require_once('../vendor/autoload.php');
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 
