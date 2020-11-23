@@ -17,7 +17,7 @@ if ($client) {
         $username=$userFind['nombre'];
         
     }
-    if( $pass == $storedUsername){ 
+    if( password_verify($pass, $storedUsername)){ 
        
        
         $_SESSION['Ruser']=$username;

@@ -7,6 +7,7 @@ $ausuario=$_POST["txtAp"];
 $clave=$_POST["txtTel"];
 $serie=$_POST["txtSerie"];
 $pass=$_POST["txtPass"];
+$encrypted = password_hash($pass,PASSWORD_DEFAULT);
 
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 
@@ -22,7 +23,7 @@ if ($client) {
     'sensoract'=>20,
     'tiempoact'=>10,
     'estado'=>'activado',
-    'pass' => $pass,
+    'pass' => $encrypted,
     
     ]);
 

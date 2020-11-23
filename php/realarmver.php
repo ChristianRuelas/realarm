@@ -16,48 +16,9 @@ if ($client) {
     $userDatabaseFind=$db->findOne([
         'serie'=>$serie,
     ]);
-   // var_dump(iterator_to_array($userDatabaseFind));
     echo($userDatabaseFind[$valor]);
-
-    
-    /*foreach($userDatabaseFind as $userFind) {
-        $dato = $userFind[''];
-        
-    }
-
-echo($dato);
-echo($serie);*/
-
-
-  
 }else {
 die("Mongo DB no inicio");
 }
-
-
-
-
-
-
-
-
-
-
-/*
-try {
-    $valor=$_POST['txto'];
-} catch (\Throwable $th) {
-   echo("error");
-}
-
-if(!isset($valor)){
-    echo("<br> aun no hay acceso a la base de datos");
-}else{
-    echo($valor."<br> aun no hay acceso a la base de datos");
-}*/
-
-
-
-
 
 ?>
