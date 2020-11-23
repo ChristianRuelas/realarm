@@ -1,0 +1,9 @@
+p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: black;
+    font-size: 3vw;
+    font-style: oblique;
+    font-weight: bold;
+}
