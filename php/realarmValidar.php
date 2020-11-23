@@ -19,12 +19,7 @@ if ($client) {
     }
     if( $pass == $storedUsername){ 
        
-        ?>
-        
-        <script type="text/javascript">
-   
-        alert("usuario si existe");
-        </script> <?php
+       
         $_SESSION['Ruser']=$username;
         $_SESSION['Rserie']=$serie;
        header('location:../Realarm.php');
@@ -36,7 +31,7 @@ if ($client) {
    
         alert("usuario no existe");
         </script> <?php
-
+        sleep(3);
        header('location:../login.php');
     }
 
