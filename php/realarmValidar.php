@@ -14,7 +14,7 @@ if ($client) {
     ]);
     foreach($userDatabaseFind as $userFind) {
         $storedUsername = $userFind['pass'];
-        $username=$userFind['nombre'];
+        $username=$userFind['nombre']."  ".$userFind['apellido'];
         
     }
     if( password_verify($pass, $storedUsername)){ 
