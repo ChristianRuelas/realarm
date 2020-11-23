@@ -16,7 +16,7 @@ function recup(){
 function regprin(){
     var mensaje = confirm("Esta seguro que quiere salir del registro");
     if (mensaje) {
-        window.location="indexphp";
+        window.location="index.php";
     }
 }
 function vercon(){
