@@ -18,7 +18,7 @@ if ($client) {
         ['serie' => $serie],
         ['$set' => ['activar' => '0']]
     );
-    $resultado=$userDatabaseFind->getModifiedCount();
+    $resultado=$userDatabaseFind2->getModifiedCount();
     if($resultado==1){
       
       echo 'apagado';

@@ -79,7 +79,7 @@ if (!isset($_SESSION['Ruser'])) {
         <input class="btn btn-two" type="button" value="Tiempo de actividad" onclick="direccionar('tiempoact')">
        <input class="btn btn-two" type="button" value="Estado" onclick="direccionar('estado')">
        <input class="btn btn-two" type="button" value="Sensor activado" onclick="direccionar('sensoract')">
-       <input class="btn btn-two" type="button" value="Boton activado" onclick="direccionar('btnpress')">
+       <input class="btn btn-two" type="button" value="Veces alarma activada" onclick="direccionar('vecesact')">
     </form>
    </div>
    <iframe id="ffr" name="frameR" class="frameR" src="php/realarmver.php" frameborder="0"></iframe>
