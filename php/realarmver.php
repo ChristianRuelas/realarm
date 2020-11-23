@@ -14,7 +14,7 @@ if ($client) {
 
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->findOne([
-        'dispositivo.serie'=>$serie,
+        'serie'=>$serie,
     ]);
    // var_dump(iterator_to_array($userDatabaseFind));
     echo($userDatabaseFind[$valor]);
