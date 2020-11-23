@@ -55,7 +55,12 @@ function vercon(){
             alert("contraseñas no son iguales");
         }
         else{
-            document.form1.submit();
+            if(document.form1.txtPass.value.length<5){
+                alert("la contraseña debe ser minimo de 6 caracteres")
+            }else{
+                document.form1.submit();
+            }
+            
         }
     }
    

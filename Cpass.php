@@ -17,10 +17,15 @@ if (!isset($_SESSION['Ruser'])) {
     <script>
       function cambiarp(){
         if(document.formita.txtpn.value==document.formita.txtcs.value){
-          if(document.formita.txtpn.value!=""&&document.formita.txtpn.value.length>5){
-            document.formita.submit();
+          if(document.formita.txtpn.value!=""){
+            if(document.formita.txtpn.value.length<5){
+              alert("la contraseña debe ser minimo de 6 caracteres")
+            }
+            else{
+              document.formita.submit();
+            }
           }else{
-            alert("la nueva contraseña esta vacia o es muy corta");
+            alert("la nueva contraseña esta vacia");
           }
          
         }
