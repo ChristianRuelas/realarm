@@ -28,6 +28,9 @@ if ($client) {
         echo'2';
         
     }
+    else if($state=="up"&&$act=="0"){
+        echo'2';
+    }
 
 
 
