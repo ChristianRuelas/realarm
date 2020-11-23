@@ -25,14 +25,11 @@ if ($client) {
        header('location:../Realarm.php');
         
     }else{
-        ?>
+        echo'<script type="text/javascript">
+        alert("Tarea Guardada");
+        window.location.href="../login.php";
+        </script>';
         
-        <script type="text/javascript">
-   
-        alert("usuario no existe");
-        </script> <?php
-        sleep(3);
-       header('location:../login.php');
     }
 
 
