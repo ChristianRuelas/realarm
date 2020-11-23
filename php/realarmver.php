@@ -16,9 +16,21 @@ if ($client) {
     $userDatabaseFind=$db->findOne([
         'serie'=>$serie,
     ]);
-    echo($userDatabaseFind[$valor]);
+   
 }else {
 die("Mongo DB no inicio");
 }
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datos</title>
+    <link rel="stylesheet" href="../css/vver.css">
+</head>
+<body>
+<p ><?php  echo($userDatabaseFind[$valor]);?></p>
+    
+</body>
+</html>
