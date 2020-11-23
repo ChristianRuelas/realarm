@@ -21,12 +21,18 @@ if ($client) {
         ['$set' => ['pass' => $npass]]
     );
     $resultado=$userDatabaseFind->getModifiedCount();
-    ?>
+    if($resultado==1){
+      header('location:../Realarm.php');
+    }
+    else{
+      ?>
         
-    <script type="text/javascript">
-
-    alert(<?php echo $resultado;?>);
-    </script> <?php
+      <script type="text/javascript">
+ 
+      alert("se produjo un error no se cambio la contraseña");
+      </script> <?php
+      header('location:../Realarm.php');
+    }
     /*if( $pass == $storedUsername){ 
        
         ?>
