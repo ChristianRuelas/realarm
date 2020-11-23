@@ -16,14 +16,12 @@ if ($client) {
     $insertOneResult = $db->insertOne([
     'nombre' => $nusuario,
     'apellido' => $ausuario,
-    'dispositivo'=>[
-        'serie'=>$serie,
-            'clave'=>$clave,
-    ],
+    'serie'=>$serie,
+    'clave'=>$clave,
     'btnpress'=>30,
-            'sensoract'=>20,
-            'tiempoact'=>10,
-            'estado'=>'activado',
+    'sensoract'=>20,
+    'tiempoact'=>10,
+    'estado'=>'activado',
     'pass' => $pass,
     
     ]);

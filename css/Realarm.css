@@ -1,8 +1,9 @@
 body{
    /* overflow: scroll;*/
     background-image: url('../img/fondoblanco.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+  
 }
 .logo{
     position: relative;

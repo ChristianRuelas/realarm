@@ -26,7 +26,7 @@ if ($client) {
         
     }else{
         echo'<script type="text/javascript">
-        alert("Tarea Guardada");
+        alert("usuario o contraseña invalidos");
         window.location.href="../login.php";
         </script>';
         
