@@ -17,7 +17,12 @@ if (!isset($_SESSION['Ruser'])) {
     <script>
       function cambiarp(){
         if(document.formita.txtpn.value==document.formita.txtcs.value){
-          document.formita.submit();
+          if(document.formita.txtpn.value!=""){
+            document.formita.submit();
+          }else{
+            alert("la nueva contraseña esta vacia");
+          }
+         
         }
         else{
           alert("no coincide la contraseña nueva");

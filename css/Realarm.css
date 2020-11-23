@@ -1,5 +1,5 @@
 body{
-    overflow: scroll;
+   /* overflow: scroll;*/
     background-image: url('../img/fondoblanco.jpg');
     background-repeat: no-repeat;
     background-size: cover;
