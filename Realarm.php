@@ -41,6 +41,7 @@ if (!isset($_SESSION['Ruser'])) {
           }).responseText;
           alert(resp);
           document.getElementById("estado").innerHTML="apagado";
+          document.getElementById("edo").style.border="1px solid red";
 
       }
       function encenderalar(){
@@ -51,6 +52,7 @@ if (!isset($_SESSION['Ruser'])) {
           }).responseText;
           alert(resp);
           document.getElementById("estado").innerHTML="encendido";
+          document.getElementById("edo").style.border="1px solid green";
 
       }
     </script>
