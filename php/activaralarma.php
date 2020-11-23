@@ -21,10 +21,10 @@ if ($client) {
         foreach($userDatabaseFind as $userFind) {
             $act = $userFind['vecesact'];    
         }
-        $act=$act+1;
+        $act2=$act+1;
         $userDatabaseFind=$db->updateOne(
             ['serie' => $serie],
-            ['$set' => ['vecesact' => $act]]
+            ['$set' => ['vecesact' => $act2]]
         );
       echo 'Alarma encendida';
     }
