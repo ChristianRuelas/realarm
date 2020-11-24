@@ -5,6 +5,7 @@ $serie= $_REQUEST['Rserie'];
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 
 if ($client) {
+    echo 'si hay';
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->find([
         'serie'=>$serie,
