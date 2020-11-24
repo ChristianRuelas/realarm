@@ -30,6 +30,7 @@ if ($client) {
 
   
 }else {
+    echo 'no hay conexion';
 die("Mongo DB no inicio");
 }
 
