@@ -1,4 +1,5 @@
 <?php
+echo 'hola';
 $serie= $_REQUEST['Rserie'];
 
 
