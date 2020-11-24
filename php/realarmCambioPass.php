@@ -5,9 +5,10 @@ if (!isset($_SESSION['Ruser'])) {
   } else {
     $user=$_SESSION['Ruser'];
   }
+  $serie=$_SESSION['Rserie'];
 $pass=$_POST["txtpa"];
 $npass=$_POST["txtpn"];
-$secret=$_POST["txtcs"];
+$encrypted = password_hash($npass,PASSWORD_DEFAULT);
 
 
 //header('location:../Realarm.php');
@@ -17,8 +18,8 @@ $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christi
 if ($client) {
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->updateOne(
-        ['nombre' => $user],
-        ['$set' => ['pass' => $npass]]
+        ['serie' => $serie],
+        ['$set' => ['pass' => $encrypted]]
     );
     $resultado=$userDatabaseFind->getModifiedCount();
     if($resultado==1){
