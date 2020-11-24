@@ -10,7 +10,7 @@ $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christi
 if ($client) {
     $db = $client->Realarm->usuarios;
     $userDatabaseFind=$db->findOne([
-        'serie'=>'abcd2222',
+        'serie'=>$serie,
     ]);
    // $storedUsername = $userDatabaseFind['pass'];
     echo($userDatabaseFind['pass']);
