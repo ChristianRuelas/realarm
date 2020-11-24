@@ -14,6 +14,7 @@ if ($client) {
     ]);
     $storedUsername = $userDatabaseFind['pass'];
     if(password_verify($pass, $storedUsername)){
+        echo 'si es igual';
         $userDatabaseFind=$db->updateOne(
             ['serie' => $serie],
             ['$set' => ['pass' => $encrypted]]
