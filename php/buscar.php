@@ -1,16 +1,14 @@
 <?php
-$id=$_GET['serie'];
+$serie=$_REQUEST['Rserie'];
+$datob=$_REQUEST['Rdato'];
 require_once('../vendor/autoload.php');
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 if ($client) {
     $db = $client->Realarm->usuarios;
-
-    $insertOneResult = $db->find([
-    'dispositivo.serie' => '123123',
-    
+    $userDatabaseFind=$db->findOne([
+        'serie'=>$serie,
     ]);
-    foreach ( $insertOneResult as $document) {
-        echo $document['_id'], "\n";}
+    echo($userDatabaseFind[$dato]);
 
  // echo $insertOneResult;
   
