@@ -10,11 +10,12 @@
     <a class="atras" onclick="regresar()">Regresar</a>
    
     <div class="paypal" id="smart-button-container">
-        <img src="img/dispositivo.jpg" alt="">
+        <img src="img/1-775-0-1-2-800x800.jpg" alt="">
         <div style="text-align: center;">
           <div style="margin-bottom: 1.25rem;">
-            <p class="titulo">Dispositivo de seguridad para casa habitacion con boton de panico</p>
-            <select class="despliegue" id="item-options"><option value="Dispositivo con 2 sensores 1 boton de panico" price="2500">Dispositivo 2 sensores 1 boton de panico - 2500 MXN</option><option value="Dispositivo con 3 sensores 2 botones de panico" price="3000">Dispositivo 3 sensores 2 botones de panico - 3000 MXN</option></select>
+            <p class="titulo">Dispositivo de seguridad con sensor magnetico Realarm para casa o negocio</p>
+            <select class="despliegue" id="item-options"><option value="Dispositivo con 2 sensores 1 boton de panico" price="1500">Dispositivo 2 sensores  - 1500 MXN</option>
+            <option value="Dispositivo con 3 sensores 2 botones de panico" price="2000">Dispositivo 3 sensores  - 2000 MXN</option></select>
             <p class="titulo">Cantidad</p>
             <select class="despliegue" style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
           </div>

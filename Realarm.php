@@ -82,7 +82,7 @@ if (!isset($_SESSION['Ruser'])) {
        <input class="btn btn-two" type="button" value="Veces alarma activada" onclick="direccionar('vecesact')">
     </form>
    </div>
-   <iframe id="ffr" name="frameR" class="frameR" src="php/realarmver.php" frameborder="0"></iframe>
+   <iframe id="ffr" name="frameR" class="frameR" src="img/Logo.png" frameborder="0"></iframe>
     
 </body>
 </html>

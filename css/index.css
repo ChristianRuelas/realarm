@@ -249,3 +249,6 @@ text-align: center;
    background-image: url('../img/engranaje.png');
    background-size: contain;    
 }
+.covid{
+    cursor: pointer;
+}

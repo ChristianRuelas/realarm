@@ -15,7 +15,7 @@
             <input name="txtName" type="text" placeholder="Primer nombre"/>
             <input name="txtAp" type="text" placeholder="Primer apellido"/>
             <input name="txtSerie" type="text" placeholder="Numero de serie del Dispositivo"/>
-            <input name="txtTel" type="text" placeholder="Clave secreta">
+            <input name="txtTel" type="text" placeholder="Clave del sipositivo">
             <input name="txtPass" type="password" placeholder="contraseña">
             <input name="txtPass2" type="password" placeholder="Repita la contraseña">
             <input value="Registrarse"  type="button" onclick="vercon()"/>
