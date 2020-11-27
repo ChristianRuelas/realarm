@@ -3,7 +3,7 @@ $serie=$_POST['txtPass'];
 $clave=$_POST['txtPass2'];
 $pas1=$_POST['txtPass3'];
 $pas2=$_POST['txtPass4'];
-
+$encrypted = password_hash($pas1,PASSWORD_DEFAULT);
 if($pas1==$pas2){
     if($pas1.length<5){
         echo'<script type="text/javascript">
@@ -31,7 +31,7 @@ if ($client) {
     if( $clave == $storedUsername){ 
         $userDatabaseFind=$db->updateOne(
             ['serie' => $serie],
-            ['$set' => ['pass' => $pas1]]
+            ['$set' => ['pass' => $encrypted]]
         );
         $resultado=$userDatabaseFind->getModifiedCount();
         if($resultado==1){
