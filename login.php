@@ -8,7 +8,7 @@
     <script src="js/index.js"></script>
     <title>Login</title>
 </head>
-<body>
+<body oncopy="return false" onpaste="return false">
     <div class="login-page">
         <img src="img/Logo.png" alt="Realarm Alarm System" class="Logo">
         <div class="form">

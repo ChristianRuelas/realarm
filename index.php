@@ -6,13 +6,16 @@
 <link rel="icon" type="image/png" href="img/Logo.png">
     <meta charset="UTF-8">
     <title>Realarm</title>
+    <script type='text/javascript'>
+	document.oncontextmenu = function(){return false}
+</script>
     <script>
         function nodisp(){
             alert("producto aun no disponible al publico");
         }
     </script>
 </head>
-<body>
+<body oncopy="return false" onpaste="return false">
     <div class="bsup" id="uno">
         <img src="img/Logo.png" alt="Realarm Alarm System" class="Logo" wid>
         <label class="titulo1">Sistema de Alerta</label>
