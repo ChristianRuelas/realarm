@@ -70,7 +70,8 @@
         puerta o ventana y atiendas de inmediato el problema <br><br>
         Un pequeño comic de como trabaja Realarm
     </p>
-    <img src="img/realarm-highres.png" alt="descripcion" width="1000px" height="600px">
+    <img src="img/realarm-highres.png" alt="descripcion" width="1000px" height="600px"><br>
+    <a href="https://www.storyboardthat.com/es" target="BLANK">si quieres crear tus propios comic haz clic aqui</a>
     <p class="parrafop">
         Un ejemplo de como se ve el sensor colocado en la puerta
     </p>
