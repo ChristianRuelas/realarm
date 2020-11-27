@@ -28,7 +28,8 @@ body{
    font-weight: bolder;
    font-family: fantasy;
    font-style: oblique;
-   font-size: 3vw;
+   font-size: 3.5vw;
+   letter-spacing: .5vw;
 }
 .btndescargas{
     position: absolute;

@@ -14,9 +14,9 @@
         <div class="form">
           <form name="form1" class="login-form" action="php/realarmValidar.php" method="POST">
              <label for="txtSerie">Login</label>
-            <input name="txtSerie" type="text" placeholder="Numero de serie del Dispositivo"/>
-            <input name="txtPass" type="password" placeholder="contraseña">
-            <input value="Entrar"  type="button" onclick="submit()"/>
+            <input name="txtSerie" type="text" placeholder="Numero de serie del Dispositivo"required/>
+            <input name="txtPass" type="password" placeholder="contraseña"required>
+            <input   type="submit"value="Entrar"/>
             <input value="Regresar a la pagina principal" type="button" onclick="regprin()"/>
             <input type="button" value="Quiero registrarme" onclick="ireg()">
             <a href="recoverypass.php">Olvide mi contraseña</a>

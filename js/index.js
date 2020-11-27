@@ -24,20 +24,25 @@ function vercon(){
   
     if (document.form1.txtAp.value==""||document.form1.txtName.value==""||document.form1.txtTel.value==""||document.form1.txtSerie.value==""||document.form1.txtPass.value==""||document.form1.txtPass2.value=="") {
         alert("faltan datos en el formulario");
-        if(document.form1.txtUser.value==""){
-            document.form1.txtUser.style.border="1px solid tomato"; 
+        if(document.form1.txtName.value==""){
+            document.form1.txtName.style.border="1px solid tomato"; 
         }else{
-            document.form1.txtUser.style.border="0"; 
+            document.form1.txtName.style.border="0"; 
         }
-        if(document.form1.txtTel.value==""){
-            document.form1.txtTel.style.border="1px solid tomato"; 
+        if(document.form1.txtAp.value==""){
+            document.form1.txtAp.style.border="1px solid tomato"; 
         }else{
-            document.form1.txtTel.style.border="0"; 
+            document.form1.txtAp.style.border="0"; 
         }
         if(document.form1.txtSerie.value==""){
             document.form1.txtSerie.style.border="1px solid tomato"; 
         }else{
             document.form1.txtSerie.style.border="0"; 
+        }
+        if(document.form1.txtTel.value==""){
+            document.form1.txtTel.style.border="1px solid tomato"; 
+        }else{
+            document.form1.txtTel.style.border="0"; 
         }
         if(document.form1.txtPass.value==""){
             document.form1.txtPass.style.border="1px solid tomato"; 
