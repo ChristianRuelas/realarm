@@ -1,8 +1,4 @@
-body{
-    background-image: url('../img/casa.jpg');
-text-align: center;
-overflow: auto;
-}
+body{ background-image: url('../img/casa.jpg');text-align: center;overflow: auto;}
 .paypal{
     position: fixed;
     top: 5%;
@@ -30,8 +26,8 @@ img{
     font-size: 2vw;
 }
 .atras:hover{
-border-bottom:1px solid black;
-color: black;
+    border-bottom:1px solid black;
+    color: black;
 }
 .titulo{
     font-family: monospace;

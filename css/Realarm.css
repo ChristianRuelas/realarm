@@ -1,9 +1,7 @@
 body{
-   /* overflow: scroll;*/
     background-image: url('../img/fondoblanco.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-  
 }
 .logo{
     position: relative;
@@ -31,7 +29,7 @@ body{
     cursor: none;
   color: hsla(0, 0%, 0%, .9);
   font: normal 4vw Varela Round, sans-serif;
-  /*font-family: 'Courier New', Courier, monospace;*/
+ 
   font-size: 3vw;
   font-weight: bold;
   top: -10%;
@@ -51,7 +49,6 @@ body{
     outline: 0;
     position: fixed;
     right: 2%;
-    
     opacity: .6;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -77,11 +74,7 @@ body{
 }
 .encendido{
     position: absolute;
-  
-    
     width: 20vw;
-   
-   
     top: 25%;
     left: 10%;
     text-align: center;

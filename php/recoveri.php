@@ -47,16 +47,7 @@ if ($client) {
         </script>';
         
     }
-
-
-
-  
 }else {
 die("Mongo DB no inicio");
 }
-
-
-
-
-
 ?>

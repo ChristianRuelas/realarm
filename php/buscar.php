@@ -9,13 +9,7 @@ if ($client) {
         'serie'=>$serie,
     ]);
     echo($userDatabaseFind[$dato]);
-
- // echo $insertOneResult;
-  
 }else {
 die("Mongo DB no inicio");
 }
-
-
-
 ?>
