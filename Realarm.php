@@ -64,6 +64,7 @@ if (!isset($_SESSION['Ruser'])) {
         <img class="logo" src="img/Logo.png" alt="Logo">
         <p class="Nuser"  ><?php echo($_SESSION['Ruser']);?></p>
         <input class="Csesion" type="button" value="Cerrar secion" onclick="Csesion()">
+        <input class="Csesion2" type="button" value="Eliminar mi cuenta" onclick="eliminar()">
         <input class="Cpass" type="button" value="Cambiar contraseña" onclick="window.location='Cpass.php'">
     </div>
    <div class="encendido">

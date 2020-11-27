@@ -52,10 +52,24 @@ body{
     opacity: .6;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
 
 }
-.Csesion:hover,.Cpass:hover{
+.Csesion2{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    position: fixed;
+    right: 2%;
+    top: 5%;
+    opacity: .6;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5vw;
+
+
+}
+.Csesion:hover,.Cpass:hover,.Csesion2:hover{
     opacity: 1;
     border-bottom: 1px solid black;
 }
@@ -69,7 +83,7 @@ body{
     opacity: .6;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
 
 }
 .encendido{
