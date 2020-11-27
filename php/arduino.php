@@ -1,6 +1,6 @@
 <?php
 require_once('../vendor/autoload.php');
-$id=$_GET['id'];
+$id=$_GET['Rserie'];
 $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christian0.nvkym.mongodb.net/Realarm?retryWrites=true&w=majority');
 if ($client) {
     $db = $client->Realarm->usuarios;

@@ -14,6 +14,7 @@ if (!isset($_SESSION['Ruser'])) {
 <head>
     <meta charset="UTF-8">
    <link rel="stylesheet" href="css/Realarm.css">
+   <link rel="icon" type="image/png" href="img/Logo.png">
    <script src="js/Realarm.js"></script>
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>

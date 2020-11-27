@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="css/compra.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
     <script src="js/index.js"></script>
     <meta charset="UTF-8">
     <title>Compra</title>

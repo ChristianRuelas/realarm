@@ -3,6 +3,7 @@
 <head>
 <script src="js/index.js" ></script>
 <link rel="stylesheet" href="css/index.css">
+<link rel="icon" type="image/png" href="img/Logo.png">
     <meta charset="UTF-8">
     <title>Realarm</title>
     <script>

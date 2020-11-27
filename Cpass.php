@@ -12,6 +12,7 @@ if (!isset($_SESSION['Ruser'])) {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reg.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
     <script src="js/index.js"></script>
     <title>CambiarPassword</title>
     <script>
