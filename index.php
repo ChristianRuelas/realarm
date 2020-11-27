@@ -27,7 +27,7 @@
             Numeros de contacto: <br>
             (656)-588-4891 <br>
             (656)-588-4892 <br><br>
-            Correo: <br><br>
+            Correos: <br><br>
             <p class="corr">shryshrox.punx@hotmail.com <br>al19210042@utcj.edu.mx</p>
         </p>
 
