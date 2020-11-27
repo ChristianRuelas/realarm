@@ -14,7 +14,7 @@ function recup(){
     document.getElementById("descargas").style.visibility='hidden';
 }
 function regprin(){
-    var mensaje = confirm("Esta seguro que quiere salir del registro");
+    var mensaje = confirm("Esta seguro que quiere salir de la pagina");
     if (mensaje) {
         window.location="index.php";
     }
