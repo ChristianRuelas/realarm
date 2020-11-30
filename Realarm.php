@@ -95,7 +95,7 @@ if (!isset($_SESSION['Ruser'])) {
       <img class="btnactivar"  src="img/encender.png" alt="encendido" onclick="encenderalar()">
       <img class="btnactivar" src="img/apagar.png" alt="apagar" onclick="apagaralar()">
    </div>
-   <div class="estado" id="edo">
+   <div class="estado" id="edo" onload="iniciar()">
        <p id="estado" class="verestado"></p>
    </div>
    <div class="vereg" id="registro">
