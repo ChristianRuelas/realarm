@@ -17,6 +17,7 @@ if (!isset($_SESSION['Ruser'])) {
     <title>Realarm</title>
     <script>
     //ajax para ver si el estado inicial debe ser apagado o encendido
+    function iniciar(){}
     var state=$.ajax({
               url:'php/webstate.php',
               dataType:'text',
@@ -30,6 +31,8 @@ if (!isset($_SESSION['Ruser'])) {
             document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           }
+        }
+        iniciar();
       function alarma(){
           // bucle para ver estado d alarma
           var alarmac=$.ajax({
