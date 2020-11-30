@@ -133,7 +133,7 @@ body{
 }
 
 .dcontenido{
-    overflow: auto;
+    overflow-x: hidden;
     position: fixed;
     width: 84.5%;
    height: 78%;
