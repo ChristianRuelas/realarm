@@ -16,8 +16,8 @@ if (!isset($_SESSION['Ruser'])) {
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
-      function alarma(){
-          var state=$.ajax({
+    //ajax para ver si el estado inicial debe ser apagado o encendido
+    var state=$.ajax({
               url:'php/webstate.php',
               dataType:'text',
               async:false
@@ -30,6 +30,8 @@ if (!isset($_SESSION['Ruser'])) {
             document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           }
+      function alarma(){
+          // bucle para ver estado d alarma
           var alarmac=$.ajax({
               url: 'php/encenderapagar.php',
               dataType:'text',
@@ -51,7 +53,7 @@ if (!isset($_SESSION['Ruser'])) {
               async:false
           }).responseText;
           if(resp=="apagado"){
-          alert(resp);
+          //alert(resp);
           document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           }else{
@@ -66,7 +68,7 @@ if (!isset($_SESSION['Ruser'])) {
               async:false
           }).responseText;
           if(resp=="Alarma encendida"){
-          alert(resp);
+          //alert(resp);
           document.getElementById("estado").innerHTML="encendido";
           document.getElementById("edo").style.border="1px solid green";
         }else{
