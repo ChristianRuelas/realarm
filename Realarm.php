@@ -5,10 +5,7 @@ if (!isset($_SESSION['Ruser'])) {
   } else {
     $user=$_SESSION['Ruser'];
   }
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,6 +17,19 @@ if (!isset($_SESSION['Ruser'])) {
     <title>Realarm</title>
     <script>
       function alarma(){
+          var state=$.ajax({
+              url:'php/webstate.php',
+              dataType:'text',
+              async:false
+          }).responseText;
+          if(state=="1"){
+            document.getElementById("estado").innerHTML="encendido";
+          document.getElementById("edo").style.border="1px solid green";
+
+          }else if(state=="2"){
+            document.getElementById("estado").innerHTML="apagado";
+          document.getElementById("edo").style.border="1px solid red";
+          }
           var alarmac=$.ajax({
               url: 'php/encenderapagar.php',
               dataType:'text',
@@ -40,9 +50,13 @@ if (!isset($_SESSION['Ruser'])) {
               dataType:'text',
               async:false
           }).responseText;
+          if(resp=="apagado"){
           alert(resp);
           document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
+          }else{
+            alert(resp);
+          }
 
       }
       function encenderalar(){
@@ -51,9 +65,13 @@ if (!isset($_SESSION['Ruser'])) {
               dataType:'text',
               async:false
           }).responseText;
+          if(resp=="Alarma encendida"){
           alert(resp);
           document.getElementById("estado").innerHTML="encendido";
           document.getElementById("edo").style.border="1px solid green";
+        }else{
+            alert(resp);
+        }
 
       }
     </script>
