@@ -33,6 +33,7 @@ if (!isset($_SESSION['Ruser'])) {
                 document.getElementById("estado").innerHTML="encendido";
                 document.getElementById("edo").style.border="1px solid green";
                 i=true;
+                ii=false;
               }
             
           }else if(alarmac=="2"){
@@ -40,6 +41,7 @@ if (!isset($_SESSION['Ruser'])) {
                 document.getElementById("estado").innerHTML="encendido";
                 document.getElementById("edo").style.border="1px solid green";
                 i=true;
+                ii=false;
               }
 
               
@@ -65,6 +67,7 @@ if (!isset($_SESSION['Ruser'])) {
           document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           ii=true;
+          i=false;
           }else{
             alert(resp);
           }
@@ -81,6 +84,7 @@ if (!isset($_SESSION['Ruser'])) {
           document.getElementById("estado").innerHTML="encendido";
           document.getElementById("edo").style.border="1px solid green";
           i=true;
+          ii=false;
         }else{
             alert(resp);
         }
