@@ -32,7 +32,7 @@ if (!isset($_SESSION['Ruser'])) {
           document.getElementById("edo").style.border="1px solid red";
           }
         }
-        iniciar();
+        
       function alarma(){
           // bucle para ver estado d alarma
           var alarmac=$.ajax({
@@ -81,7 +81,7 @@ if (!isset($_SESSION['Ruser'])) {
       }
     </script>
 </head>
-<body>
+<body onload="iniciar()">
     <div class="user" id="userr">
         <audio id="alarma" src="audio/Alarma Efecto de Sonido.mp3" preload="auto" loop></audio>
         <img class="logo" src="img/Logo.png" alt="Logo">
