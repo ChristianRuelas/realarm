@@ -16,6 +16,7 @@ if (!isset($_SESSION['Ruser'])) {
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
+    var song=document.getElementById('alarma');
     //ajax para ver si el estado inicial debe ser apagado o encendido
     function iniciar(){
     var state=$.ajax({
