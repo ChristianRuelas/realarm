@@ -16,24 +16,10 @@ if (!isset($_SESSION['Ruser'])) {
    <script src="js/jquery-3.5.1.js"></script>
     <title>Realarm</title>
     <script>
-    var song=document.getElementById('alarma');
+    var i=false;
+    var ii=false;
     //ajax para ver si el estado inicial debe ser apagado o encendido
-    function iniciar(){
-    var state=$.ajax({
-              url:'php/webstate.php',
-              dataType:'text',
-              async:false
-          }).responseText;
-          if(state=="1"){
-            document.getElementById("estado").innerHTML="encendido";
-          document.getElementById("edo").style.border="1px solid green";
-
-          }else if(state=="2"){
-            document.getElementById("estado").innerHTML="apagado";
-          document.getElementById("edo").style.border="1px solid red";
-          }
-        }
-        
+    
       function alarma(){
           // bucle para ver estado d alarma
           var alarmac=$.ajax({
@@ -43,10 +29,28 @@ if (!isset($_SESSION['Ruser'])) {
           }).responseText;
           if(alarmac=="1"){
               encender();
+              if(i==false){
+                document.getElementById("estado").innerHTML="encendido";
+                document.getElementById("edo").style.border="1px solid green";
+                i=true;
+              }
+            
           }else if(alarmac=="2"){
-              apagar();
-          }else{
-            alert("error de conexion");
+            if(i==false){
+                document.getElementById("estado").innerHTML="encendido";
+                document.getElementById("edo").style.border="1px solid green";
+                i=true;
+              }
+
+              
+         }else if(alarmac=="3"){
+           i=false;
+           if(ii==false){
+            document.getElementById("estado").innerHTML="apagado";
+          document.getElementById("edo").style.border="1px solid red";
+          ii=true;
+           }
+            //alert("error de conexion");
           }
        }
       setInterval(alarma,10000);
@@ -60,6 +64,7 @@ if (!isset($_SESSION['Ruser'])) {
           //alert(resp);
           document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
+          ii=true;
           }else{
             alert(resp);
           }
@@ -75,6 +80,7 @@ if (!isset($_SESSION['Ruser'])) {
           //alert(resp);
           document.getElementById("estado").innerHTML="encendido";
           document.getElementById("edo").style.border="1px solid green";
+          i=true;
         }else{
             alert(resp);
         }

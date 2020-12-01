@@ -4,16 +4,14 @@ function encender(){
    
    document.getElementById('alarma').play();
    document.getElementById('userr').style.backgroundColor='red';
-   document.getElementById("estado").innerHTML="encendido";
-   document.getElementById("edo").style.border="1px solid green";
+  
 }
 function apagar(){
   
    
     document.getElementById('alarma').pause();
     document.getElementById('userr').style.backgroundColor='rgba(199, 185, 185, 0.712)';
-    document.getElementById("estado").innerHTML="apagado";
-    document.getElementById("edo").style.border="1px solid red";
+   
 }
  function direccionar(x){
     document.getElementById("txtoculto").value=x;
