@@ -2,7 +2,7 @@
 function encender(){
   
    
-   song.play();
+   document.getElementById('alarma').play();
    document.getElementById('userr').style.backgroundColor='red';
    document.getElementById("estado").innerHTML="encendido";
    document.getElementById("edo").style.border="1px solid green";
