@@ -26,8 +26,8 @@ if ($client) {
     else if($state=="up"&&$act=="0"){
         echo'4';
     }
-else {
-die("Mongo DB no inicio");
-}
+    else {
+    die("Mongo DB no inicio");
+    }
 
 ?>
