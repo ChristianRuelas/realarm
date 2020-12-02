@@ -47,11 +47,12 @@ if (!isset($_SESSION['Ruser'])) {
               
          }else if(alarmac=="3"){
            i=false;
+           apagar();
            if(ii==false){
             document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           ii=true;
-          apagar();
+        
            }
             //alert("error de conexion");
           }
