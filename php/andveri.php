@@ -18,7 +18,7 @@ if ($client) {
     }else if($state=="down"&&$act=="1"){
         echo'2';
         
-    }
+    
     }else if($state=="down"&&$act=="0"){
         echo'3';
         
