@@ -57,7 +57,7 @@ if (!isset($_SESSION['Ruser'])) {
             //alert("error de conexion");
           }
        }
-      setInterval(alarma,10000);
+      setInterval(alarma,5000);
       function apagaralar(){
           var resp=$.ajax({
               url:'php/apagaralarma.php',
