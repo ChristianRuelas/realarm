@@ -29,5 +29,6 @@ if ($client) {
     else {
     die("Mongo DB no inicio");
     }
+}
 
 ?>
