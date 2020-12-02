@@ -15,14 +15,18 @@ if ($client) {
     if($state=="up"&&$act=="1"){
         echo '1'; 
         
-    }else if($state=="down"){
+    }else if($state=="down"&&$act=="1"){
         echo'2';
         
     }
-    else if($state=="up"&&$act=="0"){
-        echo'2';
+    }else if($state=="down"&&$act=="0"){
+        echo'3';
+        
     }
-}else {
+    else if($state=="up"&&$act=="0"){
+        echo'4';
+    }
+else {
 die("Mongo DB no inicio");
 }
 
