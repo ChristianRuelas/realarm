@@ -51,6 +51,7 @@ if (!isset($_SESSION['Ruser'])) {
             document.getElementById("estado").innerHTML="apagado";
           document.getElementById("edo").style.border="1px solid red";
           ii=true;
+          apagar();
            }
             //alert("error de conexion");
           }
