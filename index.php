@@ -6,11 +6,9 @@
 <link rel="icon" type="image/png" href="img/Logo.png">
     <meta charset="UTF-8">
     <title>Realarm</title>
-    <script type='text/javascript'>
-	//document.oncontextmenu = function(){return false}
-</script>
+    
     <script>
-        function nodisp(Strin x){
+        function nodisp(String x){
             if(x=="Aplicacion de escritorio"){
                 document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
             }
