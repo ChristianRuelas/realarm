@@ -10,7 +10,10 @@
 	document.oncontextmenu = function(){return false}
 </script>
     <script>
-        function nodisp(){
+        function nodisp(Strin x){
+            if(x=="Aplicacion de escritorio"){
+                document.location
+            }
             alert("producto aun no disponible al publico");
         }
     </script>
@@ -119,9 +122,9 @@
 
     </div>
     <div class="desc" id="descargas">
-        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="nodisp()"> 
+        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="<?php header('Location: https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing');?>"> 
         <img class="descimg1" src="img/windows.png" alt="windows">
-        <input class="btn third" type="button" value="Aplicacion Movil" onclick="nodisp()"><br><br>
+        <input class="btn third" type="button" value="Aplicacion Movil" onclick="nodisp(this.value)"><br><br>
         <img class="descimg2" src="img/android.png" alt="Android">
         <input class="btn first" type="button" value="Regresar" onclick="(recup())" >
 
