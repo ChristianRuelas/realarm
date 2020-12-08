@@ -8,7 +8,7 @@
     <title>Realarm</title>
     
     <script>
-        function nodisp(var x){
+        function nodisp(x){
             if(x=="Aplicacion de escritorio"){
                 document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
             }
