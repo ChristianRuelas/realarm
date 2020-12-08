@@ -10,7 +10,8 @@
     <script>
         function nodisp(x){
             if(x=="Aplicacion de escritorio"){
-                document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
+                window.open('https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing', '_blank');
+               // document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
             }else{
             alert("producto aun no disponible al publico");}
         }
