@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Realarm</title>
     <script type='text/javascript'>
-	document.oncontextmenu = function(){return false}
+	//document.oncontextmenu = function(){return false}
 </script>
     <script>
         function nodisp(Strin x){
