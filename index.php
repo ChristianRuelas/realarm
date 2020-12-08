@@ -12,7 +12,7 @@
     <script>
         function nodisp(Strin x){
             if(x=="Aplicacion de escritorio"){
-                document.location
+                document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
             }
             alert("producto aun no disponible al publico");
         }
@@ -122,7 +122,7 @@
 
     </div>
     <div class="desc" id="descargas">
-        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="<?php header('Location: https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing');?>"> 
+        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="nodisp(this.value)"> 
         <img class="descimg1" src="img/windows.png" alt="windows">
         <input class="btn third" type="button" value="Aplicacion Movil" onclick="nodisp(this.value)"><br><br>
         <img class="descimg2" src="img/android.png" alt="Android">
