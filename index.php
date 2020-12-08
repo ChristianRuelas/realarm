@@ -120,7 +120,7 @@
 
     </div>
     <div class="desc" id="descargas">
-        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="nodisp(this.value)"> 
+        <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="nodisp('Aplicacion de escritorio')"> 
         <img class="descimg1" src="img/windows.png" alt="windows">
         <input class="btn third" type="button" value="Aplicacion Movil" onclick="nodisp(this.value)"><br><br>
         <img class="descimg2" src="img/android.png" alt="Android">
