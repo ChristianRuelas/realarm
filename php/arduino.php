@@ -7,9 +7,15 @@ $client = new MongoDB\Client('mongodb+srv://christian_realarm:rugc930730@christi
 if ($client) {
     $db = $client->Realarm->usuarios;
 
+    
+    $userDatabaseFind=$db->findOne([
+            'serie'=>$serie,
+    ]);
+    $cont=$userDatabaseFind['sensoract']+1;
     $userDatabaseFind=$db->updateOne(
         ['serie' => $serie],
-        ['$set' => ['estado' => 'up']]);
+        ['$set' => ['estado' => 'up','sensoract'=>$cont]]);
+
 
   
   
