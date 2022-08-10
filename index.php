@@ -16,7 +16,7 @@
             if(x=="Aplicacion Movil"){
                 window.open('https://drive.google.com/file/d/1zMGo_8wQZXaNmuU2xNHo8B8qF8NcwgBG/view?usp=sharing', '_blank');
                // document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
-            else{
+            }else{
             alert("producto aun no disponible al publico");}
         }
     </script>
