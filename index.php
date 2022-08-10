@@ -12,7 +12,11 @@
             if(x=="Aplicacion de escritorio"){
                 window.open('https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing', '_blank');
                // document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
-            }else{
+            }
+            if(x=="Aplicacion Movil"){
+                window.open('https://drive.google.com/file/d/1zMGo_8wQZXaNmuU2xNHo8B8qF8NcwgBG/view?usp=sharing', '_blank');
+               // document.location.href = "https://drive.google.com/file/d/16-yMSbJ3hIMR03nCoxcEWZFO99sKtjRa/view?usp=sharing"
+            else{
             alert("producto aun no disponible al publico");}
         }
     </script>
@@ -33,7 +37,7 @@
             (656)-588-4891 <br>
             (656)-588-4892 <br><br>
             Correos: <br><br>
-            <p class="corr">shryshrox.punx@hotmail.com <br>al19210042@utcj.edu.mx</p>
+            <p class="corr">christian.ruelag@gmail.com <br>al21220102@utcj.edu.mx</p>
         </p>
 
     </div>
@@ -113,12 +117,12 @@
 
     </p>
     <img src="img/desinfecte.jpg" alt="desinfecte">
-    <p class="parrafop">
+    <!--<p class="parrafop">
         <br><br> Informacion sobre el covid 19 haz click en la imagen de abajo 
     </p>
     <a target="BLANK" href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses"><img class="covid" src="img/covid.jpg" alt="informacion sobre el covid 19" width="1000px"></a>
-    </p>
-
+    </p>-->
+    <a target="BLANK" href="https://www.privacypolicies.com/live/d2c7997b-c27a-481c-a225-cf06a5538f96">Politica de privasidad</a>
     </div>
     <div class="desc" id="descargas">
         <input class="btn third" type="button" value="Aplicacion de escritorio" onclick="nodisp(this.value)"> 
